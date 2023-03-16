@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,400&family=Orbitron:wght@400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/images/abstract.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+nav {
+    background-color: rgba(95, 158, 160, 0.51);
+}
+
+#header {
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 3px #000000;
+    margin-top: 50px;
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.search {
+    text-align: center;
+    margin: 30px 30px;
+}
+
+#citySearch {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-style: italic;
+    color: orangered ;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+#searchButton {
+    margin-left: 3px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: darkgray;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#searchButton:hover {
+    color: #fff;
+    text-shadow: 1px 2px 3px #000000;
+    padding: 5px 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.weather_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weatherSummary {
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 1px 2px 3px #000000;
+    font-size: 1.5rem;
+}
+
+#cityName {
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 1px 2px 3px #000000;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin: 5px;
+
+}
+
+#temp_label {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 2px 3px #000000;
+}
+
+#temp_now {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 2px 3px #000000;
+}
+
+#tip-box {
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+#days-container {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: rgba(168, 215, 217, 0.45);
+    width: 200px;
+    height: 190px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px #000000;
+    font-size: 20px;
+    color: white;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        overflow-y: auto;
+    }
+    #header{
+        margin-top: 50px;
+        font-size: 2.5rem;
+    }
+    #days-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    div {
+        width: 180px;
+        height: 150px;
+        font-size: 15px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #days-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div{
+        width: 180px;
+        height: auto;
+        font-size: 15px;
+        margin: 10px;
+    }
+}
+
+div, p {
+    text-align: center;
+    padding: 5px 10px;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+img {
+    position: relative;
+}
+
+
