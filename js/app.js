@@ -1,11 +1,6 @@
 //api_key
 const api_key = "832308d112a715ea1d8d932b7d786fee";
 
-// window.onload = function () {
-//     document.getElementById("tip-box").style.display = "block";
-//
-// };
-
 //function to fetch api information and set name to display
 function NameGrabber() {
     const newName = document.getElementById('citySearch');
@@ -34,24 +29,6 @@ function NameGrabber() {
         })
         .catch((error) => console.log(error));
 }
-
-//function to show temp_label
-
-// function showTempLabel() {
-//     const tempLabel = document.getElementById('temp_label');
-//     const tempLabelDisplay = tempLabel.style.display;
-//     const trigger = document.getElementById('searchButton')
-//
-//     if (tempLabelDisplay === 'block') {
-//         tempLabel.style.display = 'none';
-//         trigger.innerHTML = 'Search';
-//     }
-//     else {
-//         tempLabel.style.display = 'block';
-//         trigger.innerHTML = 'Search';
-//     }
-// }
-
 
 //function to build daily weather info and create divs to place info.
 function showDailyTempAndDay(data) {
@@ -94,15 +71,14 @@ function showDailyTempAndDay(data) {
     });
 }
 
-
 // function to switch the background image depending on the time of day
 function backgroundImageSwitch(currentTimeOfDay) {
     const pageBody = document.querySelector("body");
     if (currentTimeOfDay >= 6 && currentTimeOfDay < 18) {
-        pageBody.style.background = "url('../assets/images/day.jpg')"; //day time wallpaper goes here.
+        pageBody.style.background = "url('https://imgur.com/CreW7h8')"; //day time wallpaper goes here.
 
     }else{
-        pageBody.style.background = "url('../assets/images/night.jpg')"; //nighttime wallpaper goes here.
+        pageBody.style.background = "url('https://imgur.com/sGDerDP')"; //nighttime wallpaper goes here.
     }
 
 }
