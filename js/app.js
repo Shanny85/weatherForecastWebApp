@@ -72,7 +72,7 @@ function showDailyTempAndDay(data) {
 }
 
 // function to switch the background image depending on the time of day
-function backgroundImageSwitch(currentTimeOfDay) {
+function //backgroundImageSwitch(currentTimeOfDay) {
     const pageBody = document.querySelector("body");
     if (currentTimeOfDay >= 6 && currentTimeOfDay < 18) {
         pageBody.style.background = "url('https://imgur.com/CreW7h8')"; //day time wallpaper goes here.
