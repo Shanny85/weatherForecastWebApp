@@ -8,7 +8,7 @@
 
 body {
     /*background-image: url("../assets/images/abstract.png");*/
-    background-image: url("https://imgur.com/RLVWQ8L");
+    background-image: linear-gradient(to bottom right, #2f80ff, #ffda64);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
