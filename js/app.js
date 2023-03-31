@@ -30,6 +30,12 @@ function NameGrabber() {
         .catch((error) => console.log(error));
 }
 
+
+function defaultPage() {
+    document.getElementById('citySearch').defaultValue = "durban";
+    NameGrabber();
+}
+
 //function to build daily weather info and create divs to place info.
 function showDailyTempAndDay(data) {
     const weatherContainer = document.getElementById('days-container');
